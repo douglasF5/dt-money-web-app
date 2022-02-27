@@ -3,19 +3,22 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalCustomProperties = createGlobalStyle`
   :root {
     /* ACCENT */
+    /* PURPLE */
     --accent-purple: #4124B2;
     --accent-container-purple-primary: #5933D6;
     --accent-container-purple-secondary: #6933FF;
     --accent-surface-purple: rgba(84, 41, 204, 0.12);;
-    --accent-green: #064C37;
-    --on-accent-green: #098659;
-    --accent-container-green-primary: #33CC95;
-    --accent-container-green-secondary: #2EE8A5;
+    /* GREEN */
+    --accent-green: #098659;
+    --on-accent-green-container: #064C37;
+    --accent-container-green-primary: #2EE8A5;
+    --accent-container-green-secondary: #33CC95;
     --accent-surface-green: rgba(18, 164, 84, 0.12);
+    /* RED */
     --accent-red: #CB1835;
-    --on-accent-red: #680822;
-    --accent-container-red-primary: #E62E4D;
-    --accent-container-red-secondary: #FF8A91;
+    --on-accent-container-red: #680822;
+    --accent-container-red-primary: #FF8A91;
+    --accent-container-red-secondary: #E62E4D;
     --accent-surface-red: rgba(230, 46, 77, 0.12);
     /* SURFACE */
     --surface-primary: #FFFFFF;

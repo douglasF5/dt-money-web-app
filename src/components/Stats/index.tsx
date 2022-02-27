@@ -1,16 +1,12 @@
 import { Container } from "./styles";
-import incomeIcon from "../../assets/income.svg";
+import { CardStats } from "../CardStats";
 
 export function Stats() {
   return (
     <Container>
-      <div>
-        <header>
-          <h2>Income</h2>
-          <img src={incomeIcon} alt="Income" />
-        </header>
-        <strong>R$ 1000.00</strong>
-      </div>
+      <CardStats title="Income" amount={17400} />
+      <CardStats title="Expenses" amount={17400} />
+      <CardStats title="Balance" amount={17400} dynamicColor={true} />
     </Container>
   );
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BaseStyles } from "../../styles/Text";
 
 type ButtonProps = {
   label: string;
@@ -10,9 +11,7 @@ const ButtonStyled = styled.button`
   border: none;
   background-color: var(--accent-container-purple-primary);
 
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 100%;
+  ${BaseStyles}
   color: var(--on-surface-inverted);
 
   transition: background-color 100ms ease-in-out;
