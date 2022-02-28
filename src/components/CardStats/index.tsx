@@ -7,14 +7,6 @@ type CardStatsProps = {
   dynamicColor?: boolean;
 };
 
-//FORMAT CURRENCY
-// function formatValue(value: string) {
-//   let formattedValue = value
-//     ? parseInt(parseFloat(String(value).replace(/-/g, "")) * 100)
-//     : 0;
-//   return formattedValue;
-// }
-
 function formatCurrency(value: number) {
   let amount = String(value).toLocaleString();
 

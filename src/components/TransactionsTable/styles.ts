@@ -40,6 +40,14 @@ export const Container = styled.section`
 
     ${BaseStyles}
 
+    &.income {
+      color: var(--accent-green);
+    }
+
+    &.expense {
+      color: var(--accent-red);
+    }
+
     &:first-child {
       border-radius: 0.375rem 0 0 0.375rem;
     }
@@ -51,6 +59,7 @@ export const Container = styled.section`
     &:last-child {
       border-radius: 0 0.375rem 0.375rem 0;
       text-align: right;
+      font-weight: bold;
     }
 
     span {
