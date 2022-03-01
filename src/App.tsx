@@ -1,8 +1,9 @@
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import Modal from "react-modal";
-import { Reset, GlobalCustomProperties } from "./styles/GlobalStyles";
+import { Global, GlobalCustomProperties } from "./styles/GlobalStyles";
 import { useState } from "react";
+import { NewTransactionModal } from "./components/NewTransactionModal";
 
 Modal.setAppElement("#root");
 
@@ -22,13 +23,11 @@ export function App() {
     <>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Main />
-      <Modal
+      <NewTransactionModal
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handleCloseNewTransactionModal}
-      >
-        <h2>Add transaction</h2>
-      </Modal>
-      <Reset />
+      />
+      <Global />
       <GlobalCustomProperties />
     </>
   );

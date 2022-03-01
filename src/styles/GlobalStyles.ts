@@ -34,7 +34,7 @@ export const GlobalCustomProperties = createGlobalStyle`
   }
 `;
 
-export const Reset = createGlobalStyle`
+export const Global = createGlobalStyle`
   /* GLOBAL RESET */
 
   /* Box sizing rules */
@@ -136,4 +136,23 @@ export const Reset = createGlobalStyle`
     opacity: 0.7;
     cursor: not-allowed;
   }
+
+.react-modal-overlay{
+  position: fixed;
+  z-index: 3;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(54, 63, 95, 0.75);
+}
+
+.react-modal-content{
+  position: relative;
+  width: 100%;
+  max-width: 467px;
+  padding: 2rem 2.5rem 2.5rem;
+  border-radius: 0.375rem;
+  background-color: var(--surface-primary);
+}
 `;
