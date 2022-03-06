@@ -7,20 +7,21 @@ type CardStatsProps = {
   dynamicColor?: boolean;
 };
 
-function formatCurrency(value: number) {
-  let amount = String(value).toLocaleString();
-
-  return `R$ ${amount}`;
-}
-
 //DEFINE COLORS
-function defineColors(flag: boolean) {
+function defineColors(flag: boolean, amount: number) {
   if (flag) {
-    return {
+    const PositiveColorSet = {
       bg: "#2EE8A5",
       content: "#064C37",
       icon: "#064C37",
     };
+    const NegativeColorSet = {
+      bg: "#FF8A91",
+      content: "#680822",
+      icon: "#680822",
+    };
+
+    return amount > 0 ? PositiveColorSet : NegativeColorSet;
   } else {
     return {
       bg: "#FFFFFF",
@@ -31,7 +32,7 @@ function defineColors(flag: boolean) {
 }
 
 export function CardStats(props: CardStatsProps) {
-  const cardColors = defineColors(props.dynamicColor || false);
+  const cardColors = defineColors(props.dynamicColor || false, props.amount);
 
   return (
     <Container color={cardColors.bg}>
@@ -39,7 +40,12 @@ export function CardStats(props: CardStatsProps) {
         <CardTitle color={cardColors.content}>{props.title}</CardTitle>
         <CardIcon fill={cardColors.icon} iconName={props.title} />
       </header>
-      <Amount color={cardColors.content}>{formatCurrency(props.amount)}</Amount>
+      <Amount color={cardColors.content}>
+        {new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(props.amount)}
+      </Amount>
     </Container>
   );
 }
