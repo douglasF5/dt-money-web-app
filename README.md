@@ -5,7 +5,7 @@ In order to practice some React.js concepts, we built a simple budget-tracker we
 
 Concepts and tools:
 
-- Type notation with Typescript
+- Type annotation with Typescript
 - React components
 - React hooks (useState, useEffect, useContext) e context API
 - Styled Components
