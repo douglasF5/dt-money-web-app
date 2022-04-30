@@ -7,7 +7,7 @@ Concepts and tools:
 
 - Type annotation with Typescript
 - React components
-- React hooks (useState, useEffect, useContext) e context API
+- React hooks (useState, useEffect, useContext) and context API
 - Styled Components
 - Fake API with Mirage.js
 - Consuming fake API with Axios
@@ -18,7 +18,7 @@ Implemented features:
 
 - Adding new transactions via modal component
 - Consuming and saving data to a fake API
-- Calculating and displying data summary based on created transactions
+- Calculating and displaying data summary based on created transactions
 - Listing transactions
 
 ## Project screenshot
