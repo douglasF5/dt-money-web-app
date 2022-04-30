@@ -24,3 +24,4 @@ Implemented features:
 ## Project screenshot
 
 <img src=".github/project-screenshot-1.png"><br>
+<img src=".github/project-screenshot-2.png"><br>
