@@ -12,7 +12,7 @@ Concepts and tools:
 - Fake API with Mirage.js
 - Consuming fake API with Axios
 
-<be>
+<br>
 
 Implemented features:
 
