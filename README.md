@@ -21,6 +21,8 @@ Implemented features:
 - Calculating and displaying data summary based on created transactions
 - Listing transactions
 
+<br>
+
 ## Project screenshot
 
 <img src=".github/project-screenshot-1.png"><br>
