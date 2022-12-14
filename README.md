@@ -1,4 +1,4 @@
-# DT Money App
+# DT Money Web App
 
 In order to practice some React.js concepts, we built a simple budget-tracker web app as a practice project during Ignite course.
 
