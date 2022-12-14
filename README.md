@@ -1,4 +1,4 @@
-# DT Money App - Exercise 3 from Ignite
+# DT Money App
 
 In order to practice some React.js concepts, we built a simple budget-tracker web app as a practice project during Ignite course.
 
